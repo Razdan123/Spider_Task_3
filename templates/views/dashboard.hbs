@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<title>Example</title>
+<title>dashboard</title>
 <link rel="stylesheet" href="css/dashboard.css" />
 <link
   rel="stylesheet"
@@ -54,19 +54,20 @@
         <h1 style="color: black; text-align:center"><u>DashBoard</u></h1>
         <div class="content_container">
           <div class="create">
-            <h3 style="color: black;">Create Team</h3>
+            <h3 style="color: black;">ADD PRODUCTS</h3>
             
   <form style="margin: 0; padding: 0;" action="/newteamdash" method="POST">
     <p>
-      <input type="text" name="teamname" id="" placeholder="Team Name">
-      <input type="number" name="uniquecode" id="" placeholder="Unique Team Code">
-      <input type="date" name="date" id="" >
-      <button type="submit">Create New</button>
+      <input  type="text" name="productname" id="" placeholder="Product Name">
+      <input  type="number" name="initialbid" id="" placeholder="Initial Bid Price">
+      <input  type="file" id="myFile" name="filename">
+
     </p>
-    <p>
-    <input type="text" name="membername" id="" placeholder="Add Members (Enter ID)">
-    <button><i class="fa fa-plus"></i></button>
-  </p>
+<textarea name="text" cols="25" rows="5">
+Give a brief description of your product...
+</textarea><br><br>
+      <button type="submit">Add Product</button>
+</form>
   {{!-- <h3 style="color: #ff0000;">The new team has been created!</h3> --}}
 
 
